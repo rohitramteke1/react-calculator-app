@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Orbitron&family=Poppins&family=Raleway:wght@300;400&family=Roboto&family=Roboto+Mono&display=swap');
+
+html {
+    margin: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This may help to hide horizontal scrollbar */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    position: relative;
+    height: 100vh;
+}
+
+.calculator {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.display {
+    padding: 10px;
+}
+
+.input {
+    width: 100%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.text {
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 444px) {
+    .calculator {
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .display {
+        background-color: rgb(244, 244, 244);
+        border-radius: 5px;
+    }
+}
